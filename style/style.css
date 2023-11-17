@@ -1,0 +1,214 @@
+:root{
+        --main-bg: #F7F8FD;
+        --bg: #FFFFFF;
+        --blue: #3180D6;
+        --footer-bg: #D8D7D9;
+}
+
+
+*{
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+}
+
+
+
+html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+
+}
+
+body{
+        background-color: var(--main-bg);
+        padding: 2%;
+}
+
+img{
+        width: 100%;
+}
+
+.wrapper{
+        max-width: 750px;
+        margin: 0 auto;
+        background-color: var(--bg);
+        
+}
+
+.wrapper .header{
+        background: var(--blue);
+        text-align: center;
+
+}
+
+.wrapper .header .logo_area img{
+        max-width: 20rem;
+        padding: 1rem 2%;
+}
+
+.wrapper .section .box_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
+        padding: 3rem 2%;
+        text-align: center;
+}
+
+.wrapper .section .box_container .box{
+        width: 200px;
+}
+
+.wrapper .section .box_container .box h2{
+        font-size: 2.5rem;
+        color: #000;
+        padding: 1.5rem 0;
+}
+
+.wrapper .section .box_container .box p{
+        font-size: 1.4rem;
+        text-align: justify;
+        color: #666;
+        padding-bottom: 1.5rem;
+}
+
+.wrapper .section .box_container .box button{
+        background: none;
+        color: var(--blue);
+        font-size: 2rem;
+}
+
+.wrapper .section .box_container .box button:hover{
+        color: #32CE9C;
+        cursor: pointer;
+}
+
+.wrapper .contact_section .container{
+        background: var(--blue);
+        text-align: center;
+        padding: 3rem 2%;
+}
+
+.wrapper .contact_section .container h3{
+        font-size: 2rem;
+        color: #fff;
+        padding-bottom: 2rem;
+}
+
+.wrapper .contact_section .container .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
+}
+
+.wrapper .contact_section .container .icon i{
+        font-size: 3rem;
+        color: #fff;
+}
+
+.wrapper .contact_section .container .icon i:hover{
+        cursor: pointer;
+        color: #32CE9C;
+}
+
+
+.wrapper .footer .footer_container{
+        background-color: var(--footer-bg);
+        text-align: center;
+        padding: 5rem 2%;
+}
+
+.wrapper .footer .footer_container img{
+        max-width: 30rem ;
+        padding-bottom: 3rem;
+}
+
+.wrapper .footer .footer_container p{
+        font-size: 2rem;
+        color: #000;
+}
+
+.wrapper .footer .footer_container p span{
+        color: var(--blue);
+}
+
+
+.wrapper .footer .line{
+        clear: both;
+        width: 100%;
+        height: 2.5rem;
+        background-color: var(--blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries starts */
+
+@media (max-width: 750px){
+        html{
+                font-size: 55%;
+        
+        }
+}
+
+
+
+@media (max-width: 650px){
+        .wrapper .section .box_container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 2rem;
+                padding: 3rem 2%;
+        }
+}
+
+
+
+@media (max-width: 450px){
+        html{
+                font-size: 50%;
+        
+        }
+}
+
+/* media queries ends */
